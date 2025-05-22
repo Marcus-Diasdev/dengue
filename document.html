@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dengue: O que você precisa saber</title>
+    <style>
+        /* Estilos Gerais */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #e74c3c;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        /* Container Principal */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Seção de Perguntas e Respostas */
+        .faq-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* Para esconder o conteúdo que transborda */
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2rem;
+            padding: 1.2rem;
+            cursor: pointer; /* Muda o cursor para "clicável" */
+            margin: 0;
+            transition: background-color 0.3s;
+        }
+
+        .faq-question:hover {
+            background-color: #f5f5f5;
+        }
+
+        .faq-answer {
+            color: #555;
+            padding: 0 1.2rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 1000px; /* Valor alto para acomodar o conteúdo */
+            padding-bottom: 1.2rem;
+        }
+
+        /* Listas e Destaques */
+        ul, ol {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .warning {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        .footer {
+            color: gray;
+              width: 100%;
+              position: fixed;
+              font-size: 1rem;
+              text-align: center;
+              bottom: 0px;
+              z-index: 999;
+          }
+          
+          .footer a {
+              color: gray; 
+              padding: 0%; 
+              width: 100%;
+              text-decoration: none;
+          }
+          
+          .footer a:hover {
+              text-decoration: underline;
+          }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+            .faq-question {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dengue: Perguntas e Respostas</h1>
+    </header>
+
+    <div class="container">
+        <section class="faq-item">
+            <h3 class="faq-question">1. O que é a dengue?</h3>
+            <div class="faq-answer">
+                A dengue é uma doença viral transmitida pela picada do mosquito <em>Aedes aegypti</em> infectado. Ela pode variar de leve a grave e, em alguns casos, levar à morte.
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">2. Qual é a gravidade da dengue?</h3>
+            <div class="faq-answer">
+                A dengue pode ser:
+                <ul>
+                    <li><strong>Dengue clássica:</strong> Sintomas mais leves, como febre alta e dores no corpo.</li>
+                    <li><strong>Dengue hemorrágica:</strong> Forma grave, com sangramentos, queda de pressão e risco de morte se não tratada a tempo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">3. Quais são os sintomas da dengue?</h3>
+            <div class="faq-answer">
+                Os principais sintomas incluem:
+                <ul>
+                    <li>Febre alta (acima de 38°C)</li>
+                    <li>Dor de cabeça e atrás dos olhos</li>
+                    <li>Dores musculares e nas articulações</li>
+                    <li>Manchas vermelhas na pele</li>
+                    <li>Náuseas e vômitos</li>
+                    <li>Fadiga e mal-estar</li>
+                </ul>
+                <div class="warning">
+                    <strong>Em casos graves:</strong> Sangramento gengival, nariz ou vômito com sangue, dor abdominal intensa.
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">4. Quem é o mosquito transmissor da dengue?</h3>
+            <div class="faq-answer">
+                O <em>Aedes aegypti</em> é o principal mosquito transmissor da dengue, além de outras doenças como zika e chikungunya. Ele é pequeno, preto com listras brancas e costuma picar durante o dia.
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">5. Como evitar focos do mosquito da dengue?</h3>
+            <div class="faq-answer">
+                O mosquito se reproduz em água parada. Para evitar criadouros:
+                <ul>
+                    <li>Elimine qualquer recipiente que acumule água.</li>
+                    <li>Mantenha caixas d’água, tonéis e piscinas sempre tampados.</li>
+                    <li>Limpe calhas e lajes regularmente.</li>
+                    <li>Guarde garrafas e baldes virados para baixo.</li>
+                    <li>Troque a água de vasos de plantas por areia.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">6. Quais são os principais focos do mosquito dentro de casa?</h3>
+            <div class="faq-answer">
+                Os locais mais comuns onde o <em>Aedes aegypti</em> se reproduz são:
+                <ul>
+                    <li>Pratos de vasos de plantas</li>
+                    <li>Garrafas e baldes destampados</li>
+                    <li>Pneus velhos</li>
+                    <li>Calhas entupidas</li>
+                    <li>Caixas d’água abertas</li>
+                    <li>Bebedouros de animais</li>
+                    <li>Ralos e vasos sanitários pouco usados</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">7. Passo a passo para eliminar cada foco do mosquito</h3>
+            <div class="faq-answer">
+                <strong>Pratos de vasos de plantas</strong>
+                <ol>
+                    <li>Remova os pratos ou esvazie a água acumulada.</li>
+                    <li>Substitua a água por areia até a borda.</li>
+                </ol>
+
+                <strong>Garrafas e baldes</strong>
+                <ol>
+                    <li>Guarde-os virados para baixo.</li>
+                    <li>Se estiverem em uso, tampe bem ou lave com escova semanalmente.</li>
+                </ol>
+
+                <strong>Pneus velhos</strong>
+                <ol>
+                    <li>Entregue em postos de reciclagem.</li>
+                    <li>Se precisar guardá-los, fure ou mantenha em local coberto.</li>
+                </ol>
+
+                <strong>Calhas</strong>
+                <ol>
+                    <li>Limpe as calhas regularmente para evitar acúmulo de água.</li>
+                    <li>Verifique se não há folhas ou sujeira bloqueando o fluxo.</li>
+                </ol>
+
+                <strong>Caixas d’água</strong>
+                <ol>
+                    <li>Mantenha sempre bem tampadas.</li>
+                    <li>Faça limpeza periódica (a cada 6 meses).</li>
+                </ol>
+
+                <strong>Bebedouros de animais</strong>
+                <ol>
+                    <li>Troque a água diariamente.</li>
+                    <li>Lave o recipiente com bucha e sabão.</li>
+                </ol>
+
+                <strong>Ralos e vasos sanitários pouco usados</strong>
+                <ol>
+                    <li>Adicione água sanitária ou sal grosso semanalmente.</li>
+                    <li>Mantenha a tampa fechada.</li>
+                </ol>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">8. O que fazer se suspeitar de dengue?</h3>
+            <div class="faq-answer">
+                <ul>
+                    <li>Beba bastante água.</li>
+                    <li>Evite medicamentos como ácido acetilsalicílico (AAS) ou anti-inflamatórios.</li>
+                    <li>Procure um médico imediatamente se houver sinais de agravamento.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">9. Existe vacina contra a dengue?</h3>
+            <div class="faq-answer">
+                Sim, há vacinas disponíveis, mas sua aplicação depende de avaliação médica e não substitui os cuidados preventivos.
+            </div>
+        </section>
+
+        <section class="faq-item">
+            <h3 class="faq-question">10. Como a comunidade pode ajudar no combate à dengue?</h3>
+            <div class="faq-answer">
+                <ul>
+                    <li>Organizar mutirões de limpeza.</li>
+                    <li>Denunciar locais com focos à vigilância sanitária.</li>
+                    <li>Conscientizar vizinhos sobre os riscos da dengue.</li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="warning" style="text-align: center;">
+            <strong>Prevenir a dengue é responsabilidade de todos!</strong>
+        </div>
+    </div>
+
+    <footer>
+        <p class="footer">Um site de <a href="https://www.linkedin.com/in/marcus-dias-63a364221/" target="_blank">Marcus Dias</a></p>
+    </footer>
+
+    <script>
+        // Adiciona o evento de clique para mostrar/esconder respostas
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const faqItem = question.parentElement;
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
